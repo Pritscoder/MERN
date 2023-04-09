@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  mongodb:
+    image: "mongo"
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./database:/data/db
+    networks:
+      - crm
+  
+  backend:
+    build: ./backend
+    restart: always
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongodb
+    networks:
+      - crm
+  
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+    networks:
+      - crm
+
+networks:
+  crm:
+volumes:
+  database:
+    
+
+
+

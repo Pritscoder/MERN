@@ -1,0 +1,70 @@
+body{
+  background-color: rgb(237,237,237);
+}
+.login{
+  height: 30rem;
+  width: 35rem;
+  background-color: rgb(255, 255,255);  
+}
+.logins{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.login input{
+  font-size: 1.2rem;
+}
+.login button{
+  font-size: 1.5rem;
+}
+.ANavbar{
+  background-color: white;
+  height: 100vh;
+  width: 14rem;
+}
+.logo img{
+  min-width: 6rem;
+  max-width: 6rem;
+  min-height: 6rem;    
+  max-height: 6rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: black;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.profile img{
+  min-width: 8rem;
+  max-width: 8rem;
+  min-height: 8rem;    
+  max-height: 8rem;
+  border-radius: 50%;
+}
+.Ncontents{
+  margin-top: 2rem;
+  text-align: start;
+  
+}
+.Ncontents ul li{
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  cursor: pointer;  
+  
+}
+.Ncontents ul li:hover{
+  border: solid 1px black;
+  padding: 0.2rem;
+  background-color:rgb(0,0,255,0.3);
+  color: black;
+}
+.dash{
+  gap:2rem;
+}
+.dashes{
+  /* background-color: blanchedalmond; */
+  height: 8rem;
+  width: 15rem;  
+}
+
